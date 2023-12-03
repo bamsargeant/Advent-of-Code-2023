@@ -8,13 +8,14 @@ import (
 )
 
 // Advent of Code 2023, Day 1, Part 1 & 2
+// https://adventofcode.com/2023/day/1
 func main() {
 	// read the input file
 	input, _ := os.ReadFile("input.txt")
 
 	// function to calculate the sum of all the numbers in the input file
 	calc := func(r *strings.Replacer) (result int) {
-		
+
 		// loop through each line in the input file
 		for _, line := range strings.Fields(string(input)) {
 
